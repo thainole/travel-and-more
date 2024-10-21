@@ -1,0 +1,116 @@
+:root {
+  --white: #ffffff;
+  --white-smoke: #eef3ef;
+  --green: #59a878;
+  --medium-green: #115e51;
+  --dark-green: #0b3335;
+  --lime: #d6db7f;
+  --black: #030e12;
+}
+
+body {
+  background-color: var(--white-smoke);
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+  text-underline-offset: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--lime);
+  text-decoration: underline dashed;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Ubuntu', serif;
+  letter-spacing: 0.5px;
+  color: var(--dark-green);
+}
+
+/* ----------- HEADER ----------- */
+
+header {
+  background-color: var(--dark-green);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Bitter', sans-serif;
+  letter-spacing: 0.8px;
+  padding: 10px 20px;
+}
+
+header .logo img {
+  width: 180px;
+  height: auto;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 450px;
+}
+
+header nav a .fa-solid {
+  margin-right: 6px;
+}
+
+/* ----------- FOOTER ----------- */
+
+footer {
+  background-color: var(--dark-green);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+
+footer h4 {
+  font-family: 'Ubuntu', serif;
+  font-size: 18px;
+  color: var(--white);
+  text-align: center;
+}
+
+footer p {
+  color: var(--white);
+  margin: 8px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+footer .left-section ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 20px;
+  padding-top: 12px;
+}
+
+footer .left-section a {
+  font-size: 24px;
+}
+
+footer .right-section .fa-solid {
+  margin-right: 8px;
+}
+
+footer .division {
+  height: 125px;
+  width: 0.8px;
+  background-color: var(--white-smoke);
+  opacity: 0.4;
+  align-self: flex-end;
+}
